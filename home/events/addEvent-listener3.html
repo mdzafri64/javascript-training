@@ -1,0 +1,59 @@
+<input type="text" id="itemInputField" />
+<input type="button" onclick="addItem()" value="ADD ITEM"/>
+
+<ul id="item-list"></ul>
+
+
+<style>
+    #item-list {
+        text-align: center;
+        list-style-type: none;
+        background-color: rgb(204, 169, 204);
+    }
+
+    li {
+        font-size: 35px;
+        color: black;
+    }
+
+    .cross-icon {
+        margin-left: 100px;
+        text-decoration: none;
+        color: black;
+        
+    }
+</style>
+<script>
+    function addItem() {
+        //gettin input value
+        let inputElem = document.getElementById("itemInputField")
+        let elemValue = inputElem.value;
+
+        //creating li element so that we can insert li and value in item-list
+        let liElem = document.createElement("li")   
+        liElem.textContent = elemValue              
+
+        //create element
+        let aElem = document.createElement("a")      
+        aElem.href = 'javascript:void(0)'           
+        aElem.textContent = "X"               
+        aElem.className= 'cross-icon'
+        
+        liElem.appendChild(aElem)     
+
+        //printing input value in `item-list`
+        let ulElem = document.getElementById("item-list")
+        ulElem.appendChild(liElem)  
+    }
+
+    // removing specific li element
+
+    let ulElem = document.getElementById("item-list")
+    ulElem.addEventListener('click', (e) => {
+        var target = e.target  
+        var parent = target.parentNode 
+        parent.remove() 
+    })
+
+
+</script>

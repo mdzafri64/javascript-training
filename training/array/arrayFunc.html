@@ -1,0 +1,26 @@
+<style>
+    input{
+        cursor: pointer;
+        background-color: rgb(184, 161, 161);
+        color: black;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        
+    }
+
+    input:hover{
+        background-color: yellow;
+    }
+</style>
+
+<input type="button" value="zafri Detail" onclick="clickme(['zafri', 23])" />
+<input type="button" value="safeer Detail" onclick="clickme(['safeer', 21])" />
+<input type="button" value="intekhab Detail" onclick="clickme(['intekhab', 24])" />
+<p id="print"></p>
+
+<script>
+    function clickme(b){
+    document.getElementById("print").innerHTML = 'my name is ' + b[0] + ' and my age is ' + b[1]    
+    }
+</script>

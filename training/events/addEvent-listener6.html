@@ -1,0 +1,30 @@
+<input type="text" id="itemInputField" />
+<input type="button" onclick="AddItem()" value="ADD +" />
+<ul id="Item-list"></ul>
+
+<script>
+    function AddItem(){
+        let inputElem = document.getElementById('itemInputField')
+        let ElemValue = inputElem.value;
+
+        let liElem = document.createElement('li')
+        liElem.textContent = ElemValue;
+
+        let aElem = document.getElementById('a')
+        aElem.href = 'javascript:void(0)'
+        aElem.innerHTML = 'X'
+        aElem.className = 'cross-icon';
+
+        liElem.appendChild(aElem)
+
+        let ulElem = document.getElementById('Item-list')
+        ulElem.appendChild(liElem);
+    }
+
+    let ulElem = document.getElementById('Item-list')
+    ulElem.addEventListener('click', (e) =>{
+        let target = e.target
+        let liElem = target.parentNode.parentNode
+        ulElem.removeChild(liElem)
+    })
+</script>

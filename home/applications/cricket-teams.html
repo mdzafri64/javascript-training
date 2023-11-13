@@ -1,0 +1,92 @@
+<style>
+    #main{
+        color: black;
+        position: absolute;
+    }
+    
+    #input1{
+        background-color: rgba(126, 145, 139, 0.627);
+        color:  rgb(32, 32, 48);
+        padding: 10px;
+        font-weight: bold;
+        position: absolute;
+        margin-left: 10px;
+        
+    }
+
+    #input2{
+        background-color:  rgba(126, 145, 139, 0.627);
+        color:  rgb(32, 32, 48);
+        padding: 10px;
+        font-weight: bold;
+        margin-left: 85px;
+        
+    }
+
+    #input3{
+        background-color: rgba(126, 145, 139, 0.627);
+        color:  rgb(32, 32, 48);
+        padding: 10px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    #input4{
+        background-color: rgba(126, 145, 139, 0.627);
+        color: rgb(32, 32, 48);
+        padding: 10px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    .style{
+       position: relative;     
+       margin-left: 100px;
+       margin-top: 30px;
+       font-size: 20px;
+       background-color: yellow;
+       font-weight: normal; 
+    }
+
+
+</style>
+
+<input type="button" id="input1" value="India" onclick="clickme(['Indian Cricket Team Info', '1. Rohit Sharma (Captain)', '2. Kl Rahul (WK)', '3. Virat Kohli', '4. Suryakumar Yadav', '5. Hardik Pandya', '6. Ravindra Jadeja', '7. Sanju Samson', '8. Mohammad Shami',  '9. Shivam Mavi', '10. Mohammad Siraj', '11. Yuzvendra Chahal'])" />
+
+<input type="button" id="input2" value="Pakistan" onclick="clickme(['Pakistan Cricket Team Info', '1. Babar Azam (Captain)', '2. Mohammad Rizwan (WK)', '3. Haider Ali', '4. Shan Masood', '5. Khusdil Shah', '6. Asif Ali', '7. Shadab Khan', '8. Mohammad Nawaz', '9. Shahin Shah Afridi', '10. Mohammad Hassnain', '11. Haris Rauf',])" />
+
+<input type="button" id="input3"  value="England" onclick="clickme(['Englands Cricket Team Info', '1. Jos Butler (Captain & WK)', '2. Jason Roy', '3. David Malan', '4. Ben Duckett', '5. Harry Brook', '6. Moeen Ali', '7. David Villey', '8. Sam Curran', '9. Adil Rasheed', '10. Jofra Archer', '11. Olly Stone'])" />
+
+<input  type="button" id="input4" value="New Zealand" onclick="clickme(['New Zealand Cricket Team Info', '1. Santner (Captain)', '2. Finn Allen', '3. Devon Conway (WK)', '4. Chapman', '5. Daryl Mitchel', '6. Glenn Philips', '7. Michael Bracewell', '8. Jacob Duffy', '9. Ish Sodhi', '10. Lockie Ferguson', '11. Blair Tickner'])"/>
+
+<div id="main">
+    <p id="empty1" class="style"></p>
+    <p id="empty2" class="style"></p>
+    <p id="empty3" class="style"></p>
+    <p id="empty4" class="style"></p>
+    <p id="empty5" class="style"></p>
+    <p id="empty6" class="style"></p>
+    <p id="empty7" class="style"></p>
+    <p id="empty8" class="style"></p>
+    <p id="empty9" class="style"></p>
+    <p id="empty10" class="style"></p>
+    <p id="empty11" class="style"></p>
+    <p id="empty12" class="style"></p>
+</div>
+<script>
+    function clickme(a){
+        document.getElementById("empty1").innerHTML = a[0]
+        document.getElementById("empty2").innerHTML = a[1]
+        document.getElementById("empty3").innerHTML = a[2]
+        document.getElementById("empty4").innerHTML = a[3]
+        document.getElementById("empty5").innerHTML = a[4]
+        document.getElementById("empty6").innerHTML = a[5]
+        document.getElementById("empty7").innerHTML = a[6]
+        document.getElementById("empty8").innerHTML = a[7]
+        document.getElementById("empty9").innerHTML = a[8]
+        document.getElementById("empty10").innerHTML = a[9]
+        document.getElementById("empty11").innerHTML = a[10]
+        document.getElementById("empty12").innerHTML = a[11]
+        
+    }
+</script>

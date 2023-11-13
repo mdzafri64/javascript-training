@@ -1,0 +1,1 @@
+var IndianPlayers = ["<h2>" +'Indian Cricket Team Info' +"</h2>", 'Rohit Sharma (C)', 'Kl Rahul (WK)', 'Virat Kohli', 'Suryakumar Yadav', 'Shreyas Iyer', 'Ravindra Jadeja', 'Deepak Hooda', 'Mohammad Shami',  'Shivam Mavi', ' Mohammad Siraj', 'Kuldeep Yadav'];

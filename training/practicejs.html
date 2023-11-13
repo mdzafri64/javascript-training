@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    document.write(c); events Dialog Boxes Math objects<br> </br>
+    <!-- <button onclick="myfun() ">on click</button> -->
+    <!-- <button onmouseover="myfun() ">on click</button> -->
+    <!-- <button onmousedown="myfun() ">on click</button> -->
+    <!-- <button onmouseout="myfun() ">on click</button> -->
+
+    <!-- <form name="example">
+    <input type="text" size="20" name="calculator">
+    <input type="button" name="B1" value="calculate" onclick="cal()">
+    <input type="reset" name="B2" value="reset">
+    answer:<input type="text" size="20" name="answer">    
+    </form> -->
+
+    <!-- <input type="button" onclick="confirmation()" value="click me"> </input> -->
+    <!-- <input type="button" onclick="myfunction()" value="click me"> </input> -->
+
+    <form name="myform" onsubmit="return validation ()">
+        username : <input type="text" value="" id="user"> <span id="username"> </span> <br></br>
+        password : <input type="password" value="" id="pass" > <span id="password"></span> <br></br>
+        <input type="submit" value="submit" >    
+    </form>
+
+    <script>
+        // alert('my name is md zafri');
+        // document.write('where are you from bro');
+        // var a=10;
+        // var b=20;
+        // var c= a+b;
+        // document.write(c)
+        // document.write(a*b)
+        // document.write(a-b);
+        // var s=10;
+        // var d= --s;
+        // document.write(d);
+        // var e=19;
+        // var o= 20;
+        // var f= e>o;
+        // document.write(f);
+        // var d= 10;
+        // var g= 20;
+        // if(d<g){
+        //     document.write('yor are right man')
+        // }
+
+        // else if(d==g){
+        //     document.write('you are wrong man')        
+        // }
+
+        // else{
+        //     document.write('nothing')
+        // };
+        // switch(g){
+        //     case 10 : document.write('its a 10 no case');
+        //                 break;
+        //     case 20 : document.write('its a 20 no. case');
+        //                 break;                
+
+        // }
+
+        // var count= 5;
+        // while (count<10){
+        //     document.write("zafri bhai ka style<br></br>");
+        //     count++;
+        // };
+
+        // var arrays= ['thapa', 'technical'];
+        // document.write(arrays[0]);
+
+        // var alpha=['a', 'b', 'c'];
+        // var numeric=[1, 2, 3];
+        // var alphanumeric = alpha .concat(numeric);
+        // document.write('alphanumeric :' + alphanumeric); 
+        
+        // function sum(v, m){
+            // var a= 'zafri ';
+            // var b= 'ali';
+            // var c= v+m
+        //     document.write(v, m)
+        // }
+        
+        // sum('zafri ', 'ali')
+
+        // var str='javascript my name is zafri';
+
+        // var answer = str.length;
+        // var answer = str.charAt(5);
+        // var answer = str.charCodeAt(4);
+        // var answer = str.indexOf('s');
+        // document.write(answer);
+
+        // var str= new string(thapa )
+
+        // function myfun(j) {
+        //     document.write("welcome bro", " hlo")
+        // }
+
+        // myfun(j)
+
+        // function cal()
+        // {
+        //     document.example.answer.value =
+        //     eval(document.example.calculator.value)
+        // }
+
+        // function confirmation(){
+        //    var ans= confirm('you want to see webside click ok button')
+        //    if (ans){
+        //     alert('welcome to thapa tecnical')
+        //     window.location= 'https://www.youtube.com'
+        //    }
+        //         else{
+        //             alert('sorry! you click on cancel button')
+        //         }
+            
+        //    } 
+        // }
+
+        // var s="";
+        // var n=5;
+        // for(var z=1; z<=n; z++){
+        //     for(var a=1; a<=z; a++){
+        //         s=s+"@"
+        //     }
+        //     s=s+'\n'
+        // }
+
+        // console.log(s)
+
+        // function myfunction(){
+        //     var str= prompt('hi ! my name is md zafri and whats your name', 'md xafri')
+        //     alert ('nice to meet you, ' + str + '!')
+        // }
+
+        // var a= Math.floor(25.99)
+        //     document.write(a)
+
+        // var b= Math.round(1.50)
+        //     document.write(b)
+        
+            // var c= Math.log(10)
+            // document.write(c)
+
+            // var d= Math.max(10, 11, 98)
+            // document.write(d)
+
+            // var e= Math.min(10, 78, 79)
+            // document.write(e)
+
+            // var f= Math.pow(10, 2)
+            // document.write(f)
+
+            // var g= Math.sqrt(625)
+            // document.write(g)
+
+            // var h= Math.random()
+            // document.write(h)
+
+            // document.write(Date())
+
+            function validation(){
+                var un = document.getElementById("user"). value;
+                var ps = document.getElementById("pass"). value;
+
+                if(un==""){
+                    document.getElementById("username").innerHTML="** please fill the user name";
+                        return false;
+                }
+
+                if(ps==""){
+                    document.getElementById("password").innerHTML="** please fill the password";
+                        return false;
+                }
+
+                else{
+                    alert("done");
+                    return true;
+                }
+            }
+
+
+        
+    </script>
+</body>
+</html>

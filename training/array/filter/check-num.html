@@ -1,0 +1,25 @@
+<script>
+    function check(){
+        let value = document.getElementById("data").value;
+            if(value > 0){
+            result = `${value} is positive number`
+            }
+
+            else if(value < 0){
+            result = `${value} is negative number`
+            }
+
+            else if(value == 0){
+                result = `${value} is neithere not positive or not negative`
+            }
+
+            else if(value == " "){
+                result = `${value} please enter your value`
+            }
+        document.getElementById('result').innerText = result;
+    }
+    console.log()
+</script>
+<input type="" name="" id="data"/><br><br>
+<button onclick="check()">check</button>
+<p id="result"></p>

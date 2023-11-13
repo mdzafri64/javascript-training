@@ -1,0 +1,1 @@
+var EnglandsPlayers = ["<h3>" + 'Englands Cricket Team Info' + "</h3>", 'Jos Butler (C & WK)', 'Joe Root', 'David Malan', 'Ben Duckett', 'Alaister Cook', 'Moeen Ali', 'David Villey', 'Stevin Finn', 'Adil Rasheed', 'Jofra Archer', 'Olly Stone'];

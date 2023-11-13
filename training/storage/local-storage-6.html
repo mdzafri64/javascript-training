@@ -1,0 +1,13 @@
+<p id="para"></p>
+<script>
+var names = {
+  boys: 'zafri',
+  girls: 'marya',
+}
+localStorage.setItem('names',(names))
+console.log(JSON.parse(localStorage.getItem('names')));
+
+var elem = document.getElementById('para')
+
+elem.innerHTML = JSON.parse(localStorage.getItem('names')).girls + ' ' + JSON.parse(localStorage.getItem('names')).boys
+</script>

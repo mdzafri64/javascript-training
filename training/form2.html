@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="#" onsubmit="return validationform()">
+        <input type="text" placeholder="name" name="username" value=""/><br>
+        <input type="text" placeholder="email" name="useremail"/><br>
+        <input type="text" placeholder="contact" name="usercontact"/><br>
+        <textarea placeholder="address" name="useraddress"></textarea><br>
+        <p>select your gender</p>
+            <input type="radio" name="usergender">Male</input>
+            <input type="radio" name="usergender">Female</input><br><br>
+        
+
+        <select name="usercountry">
+            <option>select your country</option>
+            <option>India</option>
+            <option>Australia</option>
+            <option>Turkey</option>
+            <option>New zealand</option>
+            <option>japan</option>
+        </select> <br>
+        
+        <input type="checkbox" name="userhobby" value='cricket' />
+            Cricket
+
+        <input type="checkbox" name="userhobby" value='Football' />    
+            Football
+
+        <input type="checkbox" name="userhobby" value='singing' />    
+            singing
+
+        <input type="checkbox" name="userhobby" value="cricket"/>
+            boxing<br>
+
+            
+    
+    
+    <input type="date"/><br>
+
+        <input type="submit" />
+    </form>
+    <script>
+        function validationform(){
+            if(document.myform.username.value == ""){
+                alert('please enter your name here')
+                return false
+            }
+            if(document.myform.useremail.value == ""){
+                alert('please enter your email here')
+                return false
+            }
+            
+            if(document.myform.usercontact.value == ""){
+                alert('please enter your contact number')
+                return false
+            }
+            
+            if(document.myform.useraddress.value == ""){
+                alert('please enter your address')
+                return false
+            }   
+
+            if(document.myform.usergender.value == ""){
+                alert('please enter your gender')
+                return false
+            }
+            
+            if(document.myform.usercountry.value == "select your country"){
+                alert('please enter your country name')
+                return false
+            }
+            
+            if(document.myform.userhobby.value == "cricket"){
+                alert('please enter your hobby')
+                return false
+            }
+            
+            if(document.myform.userdate.value == ""){
+                alert('please enter date')
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

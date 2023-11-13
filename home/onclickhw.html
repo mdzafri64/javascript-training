@@ -1,0 +1,32 @@
+<style>
+.main{    
+    height: 100px;
+    width: 100px;
+    border: 2px solid gray;
+}    
+</style>
+
+<div class="main"
+    id="mainId"
+    onmouseenter="doYellow()"
+    onmouseleave="prevColor()"
+    onclick="doGray()"
+
+></div>
+
+<script>
+
+function doYellow(){    
+    document.getElementById("mainId").style.backgroundColor = "Yellow";
+    // document.getElementById("mainId").style.height = "200px";
+    // document.getElementById("mainId").style.width = "200px";
+}
+
+function prevColor(){
+    document.getElementById("mainId").style.backgroundColor = "cyan";
+}
+
+function doGray(){
+    document.getElementById("mainId").style.backgroundColor = "gray";
+}
+</script>

@@ -1,0 +1,94 @@
+<style>
+    #parent{
+        color: white;
+        background-color: crimson;
+        font-size: 70px;
+        font-weight: 900;
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+        text-transform: uppercase;
+        
+    }
+
+    #main{
+        color: black;
+        background-color: rgb(208, 174, 38);
+        font-size: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 900;
+    }
+
+    #papa{
+        color: white;
+        background-color: skyblue;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: 900;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #grandpaa{
+        color: black;
+        background-color: yellow;
+        font-size: 70px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #newmain{
+        color: white;
+        background-color: black;
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+</style>
+<p id="parent"></p>
+<h1 id="main"></h1>
+<h2 id="papa"></h2>
+<h2 id="grandpaa"></h2>
+<h2 id="newmain"></h2>
+
+<script>
+    /* // var c= 10
+    // console.log(c);
+
+    // var e = "1, 2, 3, 4"
+    // console.log(e);
+
+    // var r= ["zafri", "ille", "safeer"]
+    // console.log(r[1], "bhai khairyat se ho");
+
+    // var t= ["coldrink", "sprite", "maaza", "pepsi", "coco cola"]
+    // console.log("i like", t[2]);
+
+    // var y= ["gdgfiyuw", "ebdfhejfueryf", "yefgergey", "fagdet", "zafri", 3, 6]
+    // document.write(y.length); */
+    document.getElementById("parent").innerHTML = "i am from shekhana kalan";
+    document.getElementById("main").innerHTML = "how it possible";
+
+    var f = ["coco cola", "pepsi", "mazaa", "sprite", "zafri", "friends"]
+    document.getElementById("parent").innerHTML = f[0];
+    document.getElementById("main").innerHTML = f[1];
+    document.getElementById("papa").innerHTML = f[3];
+    document.getElementById("grandpaa").innerHTML = f[4];
+    document.getElementById("newmain").innerHTML = f[5];
+</script>

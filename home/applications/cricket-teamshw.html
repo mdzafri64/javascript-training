@@ -1,0 +1,58 @@
+<style>
+    input{
+        border: none;
+        color:antiquewhite;
+        background-color: rgb(176, 101, 114);
+        padding: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    input:hover{
+        background-color: rgb(168, 117, 117);
+    }
+
+    #app{
+        background-color: yellow;
+        color: red;
+        font-size: 25px;
+        margin-top: 50px;
+        
+        
+    }
+
+</style>
+
+    <input type="button" value="India" onclick="clickme(IndiaPlayers)" />
+        
+
+    <input type="button" value="Pakistan" onclick="clickme(PakistanPlayers)" />
+
+    <input type="button" value="England" onclick="clickme(EnglandPlayers)" />
+
+    <input type="button" value="New Zealand" onclick="clickme(NewZealandPlayers)"/>
+
+    <div id="app"></div>
+
+<script>
+
+    var IndiaPlayers = ['Indian Cricket Team Info', '1. Rohit Sharma (Captain)', '2. Kl Rahul (WK)', '3. Virat Kohli', '4. Suryakumar Yadav', '5. Shreyas Iyer', '6. Ravindra Jadeja', '7. Deepak Hooda', '8. Mohammad Shami',  '9. Shivam Mavi', '10. Mohammad Siraj', '11. Kuldeep Yadav'];
+
+    var PakistanPlayers = ['Pakistan Cricket Team Info', '1. Babar Azam (Captain)', '2. Mohammad Rizwan (WK)', '3. Sarfraz Ahamad', '4. Nasir Jamshed', '5. Khusdil Shah', '6. Asif Ali', '7. Shadab Khan', '8. Shohail Tanweer', '9. Shahin Shah Afridi', '10. Mohammad Aamir', '11. Haris Rauf',];
+
+    var EnglandPlayers = ['Englands Cricket Team Info', '1. Jos Butler (Captain & WK)', '2. Joe Root', '3. David Malan', '4. Ben Duckett', '5. Alaister Cook', '6. Moeen Ali', '7. David Villey', '8. Stevin Finn', '9. Adil Rasheed', '10. Jofra Archer', '11. Olly Stone'];
+
+    var NewZealandPlayers = ['New Zealand Cricket Team Info', '1. Kane Williamson (Captain)', '2. Will Young', '3. Devon Conway (WK)', '4. Chapman', '5. Daryl Mitchel', '6. Glenn Philips', '7. Michael Bracewell', '8. Jacob Duffy', '9. Ish Sodhi', '10. Lockie Ferguson', '11. Tom Blundell'];
+
+    function clickme(a){
+       var element = document.querySelector("#app")
+    //    .innerHTML = a
+
+    var data = a.map((val) =>{
+        return '<li>' + val + '</li>'
+    })
+
+    element.innerHTML = data
+        
+    }
+</script>

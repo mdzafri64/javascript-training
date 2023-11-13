@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 500px;
+            width: 400px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+
+        #item-list {
+            text-align: center;
+            list-style-type: none;
+            background-color: rgb(204, 169, 204);
+        }
+    
+        li {
+            font-size: 35px;
+            color: black;
+        }
+    
+        .cross-icon {
+            margin-left: 100px;
+            text-decoration: none;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+            <div class="head">
+                <h1> MY TO DO APP</h1>
+            </div>
+            <input type="text" id="itemInputField" />
+            <input type="button" onclick="addItem()" value="ADD +"/>
+    </div>
+        <ul id="item-list"></ul>
+    
+    
+    
+    <script>
+        function addItem() {
+            //gettin input value
+            let inputElem = document.getElementById("itemInputField")
+            let elemValue = inputElem.value;
+    
+            //creating li element so that we can insert li and value in item-list
+            let liElem = document.createElement("li")   // <li></li>
+            liElem.textContent = elemValue              // <li>Test</li>
+    
+            //create element
+            let aElem = document.createElement("a")      // <a></a>
+            aElem.href = 'javascript:void(0)'           // <a href='javascript:void(0)'></a>
+            aElem.textContent = "x"                     // <a href='javascript:void()'>X</a>
+            aElem.className= 'cross-icon'
+            
+            liElem.appendChild(aElem)     // <li>Test<a href='javascript:void()'>X</a></li>
+    
+            //printing input value in `item-list`
+            let ulElem = document.getElementById("item-list")
+            ulElem.appendChild(liElem)  // <ul id="item-list"><li>Test<a href='javascript:void()'>X</a></li></ul>
+        }
+    
+        // removing specific li element
+    
+            let ulElem = document.getElementById("item-list")
+            ulElem.addEventListener('click', (e) => {
+            var target = e.target   // a
+            var parent = target.parentNode  // li
+            parent.remove() //li is removed now
+        })
+    
+    
+    </script>
+</body>
+</html>

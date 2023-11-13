@@ -1,0 +1,1 @@
+var PakistaniPlayers = ["<h3>" +'Pakistan Cricket Team Info' +"</h3>", 'Babar Azam (C)', 'Mohammad Rizwan (WK)', 'Sarfraz Ahamad', 'Nasir Jamshed', 'Khusdil Shah', 'Asif Ali', 'Shadab Khan', 'Shohail Tanweer', 'Shahin Shah Afridi', 'Mohammad Aamir', 'Haris Rauf',];

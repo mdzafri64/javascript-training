@@ -1,0 +1,10 @@
+<input type="text" id='studentName' onchange="changeMe()" />
+
+<p id="para"></p>
+
+<script>
+    function changeMe(){
+        var sName = document.getElementById('studentName').value
+        document.getElementById('para').innerHTML = sName
+    }
+</script>

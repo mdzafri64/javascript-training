@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my calculator</title>
+</head>
+<body>
+    <label>1stNumber :</label>
+    <input type="number" id="1stnum">
+    <label>2ndNumber :</label>
+    <input type="number" id="2ndnum"/><br><br>
+    <div id="deco">
+        <input type="button" value="Add" onclick="add()"/>
+        <input type="button" value="Subtract" onclick="subtract()"/>
+        <input type="button" value="Multiply" onclick="multiply()"/>
+        <input type="button" value="Divide" onclick="divide()"/>
+    </div>
+        <p id="result"></p>
+        <style>
+            #deco{
+                align-items: center;
+                margin-left: 130px;
+            }
+
+            #result{
+                color: blue;
+                margin-left: 190px;
+            }
+        </style>
+
+    <script>
+        let firstNum, secondNum, result;
+
+        function condition(){
+            if(firstNum == ''){
+                alert('please put your first value')
+                return false;
+            }
+            if(firstNum == ''){
+                alert('please put your second value')
+                return false;
+            }
+            return true;
+        }    
+        function add(){
+            firstNum = document.getElementById('1stnum').value;
+            secondNum = document.getElementById('2ndnum').value;
+            if(condition()){
+            result = Number(firstNum) + Number(secondNum);
+            document.getElementById('result').innerHTML = `The answer is : ${result}`;
+        }
+    }
+
+        function subtract(){
+            firstNum = document.getElementById('1stnum').value;
+            secondNum = document.getElementById('2ndnum').value;
+            if(condition()){
+            result = Number(firstNum) - Number(secondNum);
+            document.getElementById('result').innerHTML = `The answer is : ${result}`;
+            }
+        }
+
+        function multiply(){
+            firstNum = document.getElementById('1stnum').value;
+            secondNum = document.getElementById('2ndnum').value;
+            if(condition()){
+            result = Number(firstNum) * Number(secondNum);
+            document.getElementById('result').innerHTML = `The answer is : ${result}`;
+            }
+        }
+
+        function divide(){
+            firstNum = document.getElementById('1stnum').value;
+            secondNum = document.getElementById('2ndnum').value;
+            if(condition()){
+            result = Number(firstNum) / Number(secondNum);
+            document.getElementById('result').innerHTML = `The answer is : ${result}`;
+            }
+        }
+    </script>    
+</body>
+</html>

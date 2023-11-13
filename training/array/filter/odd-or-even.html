@@ -1,0 +1,15 @@
+<!-- <input type="number" id="num" /> -->
+<input type="number" id="inputField"/>
+<input type="button" value="submit" onclick="checkItem()"/>
+
+<script>
+    function checkItem(){
+    let num = document.getElementById('inputField').value
+    
+    if(num % 2 == 0){
+        console.log('this is an even number')
+    }else
+        console.log('this is an odd number')
+    
+}
+</script>

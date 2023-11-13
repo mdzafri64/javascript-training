@@ -1,0 +1,37 @@
+<style>
+    #error{
+        color: red;
+    }
+
+    #errorEmail{
+        color: red;
+    }
+</style>
+
+<form onsubmit ="return validateform()">
+    <input type="text" id="teacherName" />
+    <p id="error"></p>
+    <input type ="text" id="teacherEmail" />
+    <p id="errorEmail" class="err"></p> 
+    <input type="submit" value="submit" />
+</form>
+
+<script>
+    function validateform(){
+        var tName = document.getElementById("teacherName").value
+        var tEmail = document.getElementById("teacherEmail").value
+        if (tName == ""){
+            console.log (document.getElementById("error").innerHTML = "please enter teacher name")
+            return false;
+        }else{
+            document.getElementById("error").innerHTML = ""
+        }
+
+        if (tEmail == ""){
+            console.log (document.getElementById("errorEmail").innerHTML = "please enter teacher email")
+            return false;
+        }else{
+            document.getElementById("errorEmail").innerHTML = ""
+        }
+    }
+</script>

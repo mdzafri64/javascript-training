@@ -1,0 +1,18 @@
+<!-- <input type="button" id="btnt" value="ON" onclick="changeStatus()"/>
+<script>
+    function changeStatus(){
+        var element =document.getElementById("btnt")
+        element.value = 'OFF'
+    }
+</script> -->
+
+<input type="button" id="btn" value="ON"/>
+
+<script>
+    var element = document.getElementById("btn")
+    element.addEventListener('click', () => {
+        element.value = "OFF"
+
+    })
+</script>
+

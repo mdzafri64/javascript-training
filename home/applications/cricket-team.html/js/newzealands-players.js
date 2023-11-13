@@ -1,0 +1,1 @@
+var NewZealandsPlayers = ["<h2>" +'New Zealand Cricket Team Info' +"</h2>", 'Kane Williamson (C)', 'Will Young', 'Devon Conway (WK)', 'Chapman', 'Daryl Mitchel', 'Glenn Philips', 'Michael Bracewell', 'Jacob Duffy', 'Ish Sodhi', 'Lockie Ferguson', 'Tom Blundell'];

@@ -1,0 +1,19 @@
+<input type="text" id="write"/>
+<input type="button" onclick="addItem()" value="Add Item"/>
+
+<script>
+    var container = [] //fridge
+    function addItem(){
+        var inputvalue = document.getElementById('write').value  //seb
+        container.push(inputvalue)  //seb ko fridge me rakh rahe hain
+        localStorage.setItem('items', JSON.stringify(container))
+        AddValue()
+       
+    }
+    AddValue()
+
+
+    function AddValue(){
+        console.log(JSON.parse(localStorage.getItem('items')));
+    }
+</script>

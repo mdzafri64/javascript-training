@@ -1,0 +1,20 @@
+<input type="text" id="textbox"/>
+<input type="button" onclick="saveValue()" value="save"/>
+<p id="see"></p>
+
+<script>
+function saveValue(){
+    
+    var inputValue = document.getElementById('textbox').value
+    console.log(inputValue);
+    localStorage.setItem('value', inputValue)
+    getValue()
+}
+getValue()
+ 
+function getValue(){
+    var para = document.getElementById('see')
+    var localValue = localStorage.getItem('value')
+    para.innerHTML = localValue
+}
+</script>

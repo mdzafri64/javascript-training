@@ -1,0 +1,62 @@
+<style>
+   #team{
+      text-align: center;
+      font-size: 50px;
+      color: white;
+      background-color: black;
+      border-radius: 10px;
+      padding: 5px;
+
+   }
+
+   #playerName{
+      background-color: pink;
+      padding: 10px;
+      border-radius: 5px;
+      
+   }
+
+   #center{
+      text-align: center;
+   }
+
+   #para{
+      text-align: center;
+      font-size: 50px;
+      color: white;
+      background-color: black;
+      border-radius: 10px;
+      padding: 5px;
+
+   }
+
+   #studentName{
+      background-color: pink;
+      padding: 10px;
+      border-radius: 5px;
+      
+   }
+
+   #center{
+      text-align: center;
+   }
+</style>
+<h1 id="center">
+<input type="text" id="studentName" onchange="changeMe()" />
+<input type="text" id="playerName" onmouseover="exchangeMe()" />
+</h1>
+
+<p id="para"></p>
+<p id="team"></p>
+
+<script>
+   function changeMe(){
+   var sName = document.getElementById("studentName").value
+   document.getElementById("para").innerHTML = sName
+   }
+
+   function exchangeMe(){
+   var pName = document.getElementById("playerName").value
+   document.getElementById("team").innerHTML = pName
+   }
+</script>

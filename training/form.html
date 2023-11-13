@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myform" action='#' onsubmit="return validform()" >
+        <input type="text" placeholder='name'  name='username'/><br>
+        <input type="text" placeholder='email'  name='useremail'/><br>
+        <input type="text" placeholder='message'  name='usermessage'/><br>
+        <input type="submit" />
+    </form>
+
+    <script>
+        function validform(){
+            if(document.myform.username.value==''){
+                alert('please enter your name')
+                return false
+            }
+            if(document.myform.useremail.value==''){
+                alert('please enter your email')
+                return false
+            }
+            if(document.myform.usermessage.value==''){
+                alert('please enter your message')
+                return false
+            }
+            // console.log(document.myform.username.value)
+            // console.log(document.myform.useremail.value)
+            // console.log(document.myform.usermessage.value)
+            // return false
+        }
+    </script>
+</body>
+
+</html>
