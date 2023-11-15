@@ -6,4 +6,4 @@ function isMonitor(rollNumber){
     }
 }
 
-console.log(isMonitor(1))
+console.log(isMonitor(2))
