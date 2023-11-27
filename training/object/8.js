@@ -21,14 +21,34 @@ let obj = {
             runs: 184,
             isNotOut: true
         }
+    ],
+    league_part: [
+        {
+            league_name: 'Ipl',
+            team_part: 'kkr',
+            team_owner: 'Sharukh Khan'
+        },
+        {
+            league_name: 'big bash',
+            team_part: 'canberra',
+            team_owner: 'John'
+        },
+        {
+            league_name: 'Ranji',
+            team_part: 'Punjab',
+            team_owner: 'Harbajan Singh'
+        }
     ]
 }
 
 // console.log(obj.centuries[1]);
 // console.log(obj.centuries)
 
-obj.centuries.map((info) => {
-    console.log(info.runs)
+// obj.centuries.map((info) => {
+//     console.log(info.runs)
+// })
+
+obj.league_part.map((info)=>{
+    console.log(info.league_name)
+
 })
-
-
