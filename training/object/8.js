@@ -50,5 +50,4 @@ let obj = {
 
 obj.league_part.map((info)=>{
     console.log(info.league_name)
-
 })
