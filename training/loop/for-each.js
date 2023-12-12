@@ -1,10 +1,10 @@
-let arr = [2, 3, 4, 5, 6]
+let arr = [2, 3, 4, 5, 6, 'xafri']
 
 arr.forEach(myFunc)
 
 function myFunc(value, key){
    // console.log(key, value);
-   console.log(`${key} index par hai ${value}`)
+   console.log(`${value} index number par hai ${key}`)
     
 }
 
@@ -15,6 +15,8 @@ function myFunc(value, key){
 // let array = [10, 20, 30 ,40, 50]
 // array.forEach(myFunc)
 
-// function myFunc(value, key){
-//    console.log(`${key} index par hai ${value}`)
-// }
+// arr.map(function(value, key){
+//    console.log(value, key)
+// })
+
+// arr.map((value, key) => console.log(value, key))

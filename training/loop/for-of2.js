@@ -3,8 +3,6 @@ let obj = {
     age: 23,
 }
 
-for(let k of obj){
-    console.log(k)
-}
+console.log(Object.entries(obj))
 
-// console.log(Object.entries(obj));
+// console.log(obj)
